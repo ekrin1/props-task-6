@@ -1,4 +1,3 @@
-import catPhoto from './assets/cat.svg';
 import './App.css';
 import { UserProfile } from './types';
 
@@ -6,6 +5,8 @@ import UserDescription from './components/UserDescription';
 import ContactCard from './components/ContactCard';
 import LocationCard from './components/LocationCard';
 import InterestsCard from './components/InterestsCard';
+
+import catPhoto from './assets/cat.svg';
 
 function App() {
     const userProfile: UserProfile = {

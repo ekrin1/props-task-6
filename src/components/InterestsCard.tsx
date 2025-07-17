@@ -1,6 +1,6 @@
 import Card from './Card';
 
-export default function InterestsCard({ interests = [] }: { interests?: string[] }) {
+export default function InterestsCard({ interests = [] }: { interests: string[] }) {
   if (interests.length === 0) return null;
 
   return (
