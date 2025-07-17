@@ -8,10 +8,12 @@ type Props = {
 };
 
 export default function UserDescription({ name, description, protoUrl, openForWork }: Props) {
+  const isDefault = !protoUrl;
+
   return (
     <div className="description">
       <img
-        className="photo--default"
+        className={`photo ${isDefault ? '' : 'photo--rounded'}`}
         src={protoUrl || defaultUserPhoto}
         alt={`Фото ${name}`}
       />

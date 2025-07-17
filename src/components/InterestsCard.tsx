@@ -1,23 +1,15 @@
-// components/InterestsCard.tsx
+import Card from './Card';
 
-type Props = {
-    interests?: string[];
-  };
-  
-  export default function InterestsCard({ interests }: Props) {
-    if (!interests || interests.length === 0) return null;
-  
-    return (
-      <div className="card">
-        <div className="card-header">Интересы</div>
-        <div className="card-content">
-          <ul>
-            {interests.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    );
-  }
-  
+export default function InterestsCard({ interests = [] }: { interests?: string[] }) {
+  if (interests.length === 0) return null;
+
+  return (
+    <Card title="Интересы">
+      <ul>
+        {interests.map((interest) => (
+          <li key={interest}>{interest}</li> 
+        ))}
+      </ul>
+    </Card>
+  );
+}

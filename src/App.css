@@ -13,12 +13,6 @@ p {
   margin: 8px 0;
 }
 
-.photo--default {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-}
-
 .description {
   margin-bottom: 40px;
 }
@@ -52,4 +46,13 @@ p {
 
 .read-the-docs {
   color: #888;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+}
+
+.photo--rounded {
+  border-radius: 50%;
 }

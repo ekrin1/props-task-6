@@ -1,5 +1,5 @@
+import catPhoto from './assets/cat.svg';
 import './App.css';
-
 import { UserProfile } from './types';
 
 import UserDescription from './components/UserDescription';
@@ -10,7 +10,7 @@ import InterestsCard from './components/InterestsCard';
 function App() {
     const userProfile: UserProfile = {
       userName: 'Кот',
-      protoUrl: null,
+      protoUrl: catPhoto,
       userDescription: 'Любитель покушать и поспать',
       openForWork: false,
       contactInfo: {
